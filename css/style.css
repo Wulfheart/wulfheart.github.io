@@ -1,0 +1,15 @@
+.homer {
+ background:linear-gradient(135deg, #0FF0B3 0%,#036ED9 100%);
+}
+
+.box {
+  margin-top:50px;
+  margin-bottom:50px;
+  padding-top: 30px;
+  padding-bottom:30px;
+}
+
+.date {
+  text-align: center;
+}
+
