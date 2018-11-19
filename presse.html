@@ -1,0 +1,20 @@
+---
+title: Presse
+description: Eine Liste aller Zeitungsartikel
+layout: default
+---
+
+{% for post in site.posts %}
+<div class="py-3" style="">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <p class="text-monospace text-right">{{post.date | date:"%d.%m.%Y"}}<br>{{post.medium}}</p>
+            </div>
+            <div class="col-md-8">
+                <a class="h1 text-primary" href="{{post.url}}">{{post.title}}</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endfor %}
