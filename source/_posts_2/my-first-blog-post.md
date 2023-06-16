@@ -1,7 +1,7 @@
 ---
 extends: _layouts.post
 section: content
-title: My First Blog Post
+title: Trying to build a forum - Initial thoughts
 date: 2022-07-20
 ---
 

@@ -34,6 +34,8 @@
 
         @if ($page->production)
             <!-- Insert analytics code here -->
+            <script data-goatcounter="https://wulf-industries.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
         @endif
 
     </head>
