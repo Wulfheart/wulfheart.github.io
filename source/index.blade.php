@@ -6,7 +6,7 @@
         Hey, I'm Alex 👋
     </h1>
     <p>
-        I like to develop stuff. Below you can find my thoughts.
+        I like to develop stuff. You can find some thoughts below.
     </p>
     <h2>Socials</h2>
     <ul>
