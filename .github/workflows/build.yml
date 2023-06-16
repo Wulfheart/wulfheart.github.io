@@ -20,14 +20,14 @@ jobs:
     - name: Install dependencies
       run: composer update --prefer-dist --no-progress
     - name: Build Jigsaw
-      run: vendor/bin/jigsaw build prod
+      run: vendor/bin/jigsaw build production
     - name: Setup Pages
       uses: actions/configure-pages@v3
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v1
       with:
         # Upload entire repository
-        path: './build_prod'
+        path: './build_production'
     - name: Deploy to GitHub Pages
       id: deployment
       uses: actions/deploy-pages@v2
