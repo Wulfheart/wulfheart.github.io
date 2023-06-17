@@ -1,52 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <meta name="description" content="{{ $page->description ?? $page->siteDescription }}">
 
-        <meta property="og:title" content="{{ $page->title ? $page->title . ' | ' : '' }}{{ $page->siteName }}"/>
-        <meta property="og:type" content="{{ $page->type ?? 'website' }}" />
-        <meta property="og:url" content="{{ $page->getUrl() }}"/>
-        <meta property="og:description" content="{{ $page->description ?? $page->siteDescription }}" />
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="{{ $page->description ?? $page->siteDescription }}">
 
-        <title>{{ $page->title ?  $page->title . ' | ' : '' }}{{ $page->siteName }}</title>
+    <meta property="og:title" content="{{ $page->title ? $page->title . ' | ' : '' }}{{ $page->siteName }}" />
+    <meta property="og:type" content="{{ $page->type ?? 'website' }}" />
+    <meta property="og:url" content="{{ $page->getUrl() }}" />
+    <meta property="og:description" content="{{ $page->description ?? $page->siteDescription }}" />
 
-        <link rel="home" href="{{ $page->baseUrl }}">
-        <link href="/blog/feed.atom" type="application/atom+xml" rel="alternate" title="{{ $page->siteName }} Atom Feed">
-        <style>
-            body { 
-                font-family: monospace;
-                line-height: 1.4;
-                font-size: 16px;
-                padding: 0 10px;
-                margin: 50px auto;
-                max-width: 650px;
-            }
+    <title>{{ $page->title ? $page->title . ' | ' : '' }}{{ $page->siteName }}</title>
 
-            main
-            {
-            max-width:42em;margin:15 auto;
+    <link rel="home" href="{{ $page->baseUrl }}">
+    <link href="/blog/feed.atom" type="application/atom+xml" rel="alternate" title="{{ $page->siteName }} Atom Feed">
+    <style>
+        body {
+            font-family: monospace;
+            line-height: 1.4;
+            font-size: 16px;
+            padding: 0 10px;
+            margin: 50px auto;
+            max-width: 650px;
+        }
 
-            }
-        </style>
+        main {
+            max-width: 42em;
+            margin: 15 auto;
 
-        @if ($page->production)
-            <!-- Insert analytics code here -->
-            <script data-goatcounter="https://wulf-industries.goatcounter.com/count"
-        async src="//gc.zgo.at/count.js"></script>
-        @endif
+        }
 
-    </head>
+        li:not(:last-child) {
+            margin-bottom: 1em;
+        }
+        details>summary {
+            font-weight: bold;
+        }
+    </style>
 
-    <body>
+    @if ($page->production)
+        <!-- Insert analytics code here -->
+        <script data-goatcounter="https://wulf-industries.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+    @endif
+
+</head>
+
+<body>
 
 
-        <main role="main">
-            @yield('body')
-        </main>
+    <main role="main">
+        @yield('body')
+    </main>
 
-        @stack('scripts')
-    </body>
+    @stack('scripts')
+</body>
+
 </html>
