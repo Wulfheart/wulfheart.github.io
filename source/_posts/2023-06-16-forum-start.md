@@ -51,15 +51,16 @@ I really like:
    or feature requests. 
 4. You can enable topics to be marked as solved. This is great for support
    forums.
-5. You can enable topics to be displayed like a blog post. This is great for
-   announcements or blog posts.
+5. You can enable topics to be displayed like a blog post preview. This is great
+   for announcements or blog posts.
 
 With that in my mind I feel like I could also build a forum software. Not as a
 competitor to already existing projects but as a playground to learn more about
-Laravel and to build something I can use for my own projects. I don't want to be
-limited by the feature set of other forum software. 
+Laravel and to build something I can use for my own projects.
 
-I recently started reading Learning Domain Driven Design by [Vlad
+I recently started reading "Learning Domain Driven Design" by [Vlad
 Khononov](https://vladikk.com/page/about/) and I think it is a great way to
 approach this project. I will try to document my journey here. I hope you will
 enjoy it.
+
+If you would like to comment it you can do this on [twitter](https://twitter.com/alexfwulf/status/1670050990937247745).
