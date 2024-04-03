@@ -2,7 +2,7 @@
 extends: _layouts.post
 section: content
 title: Trying to build a forum software - Initial thoughts
-date: 2022-07-20
+date: 2023-07-20
 ---
 
 Some time ago I read an blog article that stated that forum software is harder
